@@ -2,6 +2,8 @@ FROM p13i/docker-pyenv
 
 MAINTAINER https://github.com/p13i/docker-tox
 
+RUN pip install tox
+
 # Install multiple Python versions
 RUN pyenv install 2.6.6
 RUN pyenv install 2.7
